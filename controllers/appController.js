@@ -24,6 +24,23 @@ exports.dependencies = (req, res) => {
   res.render('dependencies.hbs', { dependencies });
 };
 
+exports.minimumSecurePage = async (req, res) => {
+  const releases = await getJSON(NODE_API_URL);
+  const securedReleases = releases.filter((release) => release.security);
+  const minimumSecured = getLatestReleases(securedReleases);
+  res.render('minimum-secure.hbs', {
+    result: JSON.stringify(minimumSecured, undefined, '  '),
+  });
+};
+
+exports.latestReleasesPage = async (req, res) => {
+  const releases = await getJSON(NODE_API_URL);
+  const latest = getLatestReleases(releases);
+  res.render('latest-releases.hbs', {
+    result: JSON.stringify(latest, undefined, '  '),
+  });
+};
+
 exports.minimumSecure = async (req, res) => {
   try {
     res.setHeader('Content-type', 'application/json');
@@ -47,5 +64,5 @@ exports.latestReleases = async (req, res) => {
 };
 
 exports.home = (req, res) => {
-  res.render('home.hbs', { title: 'Nodejs Examples Initiative Challenge' });
+  res.render('home.hbs');
 };
