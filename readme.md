@@ -2,6 +2,30 @@
 
 > **The Node.js Examples Initiative is looking for a qualified mentee to join the initiative.**
 
+## Installation Instructions
+
+### To run the application
+
+```bash
+npm run start
+```
+
+### To run the tests
+
+```bash
+npm run test
+```
+
+## Application screenshots
+
+| ![Home Page](public/home-page.png)                    | ![Dependencies Page](public/dependencies-page.png)      |
+| ----------------------------------------------------- | ------------------------------------------------------- |
+| ![Minimum Secure Page](public/minimumSecure-page.png) | ![Latest Releases Page](public/latestReleases-page.png) |
+
+---
+
+### Instructions from Challenge
+
 ## This challenge will test your ability to:
 
 1. Write code in Node.js beyond "Hello World"
