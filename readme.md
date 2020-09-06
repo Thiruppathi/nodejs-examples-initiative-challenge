@@ -2,6 +2,13 @@
 
 > **The Node.js Examples Initiative is looking for a qualified mentee to join the initiative.**
 
+## Live Demo
+
+Try out the deployed development environment:
+[Live Demo with CodeSandbox](https://sdtcg.sse.codesandbox.io/)
+
+---
+
 ## Installation Instructions
 
 ### To run the application
@@ -15,6 +22,8 @@ npm run start
 ```bash
 npm run test
 ```
+
+---
 
 ## Application screenshots
 
