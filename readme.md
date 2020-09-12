@@ -46,14 +46,14 @@ npm run test
 
 ## Requirements:
 
-- Use the API [here](https://nodejs.org/dist/index.json)
-- Licensed as MIT
-  - In `package.json`
-  - License file included
-- Use the following packages:
-  - `bent` for all requests
-  - `semver` for version comparisons and other operations
-  - `hbs` to render handlebars templates
+- [x] Use the API [here](https://nodejs.org/dist/index.json)
+- [x] Licensed as MIT
+  - [x] In `package.json`
+  - [x] License file included
+- [x] Use the following packages:
+  - [x] `bent` for all requests
+  - [x] `semver` for version comparisons and other operations
+  - [x] `hbs` to render handlebars templates
 
 ## The Challenge
 
